@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Sound Cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9">
+                <input type="text" class="form-control" placeholder="Buscar Grupo"></input>
+            </div>
+            <div class="col-3">
+                <button onclick="busqueda()" type="button" class="btn btn-default">Buscar </button>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="lista">
+            </div>
+
+        </div>
+    </div>
+    <div onDrop="onDrop(event)" ondragover="onDragOver(event)" id="contenedor1">
+    </div>
+    <div class="z">
+        <aside id="sidebar">Playlist</aside>
+
+
+        <div id="fileWrapper">Drop Files Here</div>
+
+        <!--<button onclick="readSong()">Load</button>-->
+
+        <audio controls autoplay></audio>
+
+        <div id="controls">
+            <span id="playPause">
+        <i class="fa fa-play play fa-2x"></i>
+        <i class="fa fa-pause pause fa-2x"></i>
+      </span>
+
+            <progress value="0" max="100"></progress>
+            <span id="duration">0:00 / 0:00</span>
+
+            <span id="volumeControls">
+        <i class="fa fa-volume-off volume-down fa-2x"></i>
+        <input id="volume" type="range" min="0" max="10" value="5" />
+        <i class="fa fa-volume-up volume-up fa-2x"></i>
+      </span>
+        </div>
+        <script src=" https://connect.soundcloud.com/sdk/sdk-3.3.0.js "></script>
+        <script src="./assets/vendors/jquery/dist/jquery.min.js "></script>
+        <script src="./assets/js/app.js "></script>
+        <script src="./assets/js/main.js "></script>
+        <script src="./assets/js/jquery.js"></script>
+</body>
+
+</html>
