@@ -1,0 +1,72 @@
+{
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: orange!important;
+}
+
+#files {
+    width: 85%;
+    height: 100px;
+    position: relative;
+    text-align: right;
+    -moz-opacity: 0;
+    filter: alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    display: inline-block;
+    background-color: #fefefe;
+}
+
+#fileWrapper {
+    width: 85%;
+    height: 400px;
+    position: relative;
+    right: 0;
+    background: tomato;
+    display: inline-block;
+}
+
+#controls {
+    background: teal;
+    text-align: center;
+    position: relative;
+    height: 60px;
+}
+
+.pause {
+    display: none;
+}
+
+#volumeControls {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#playPause {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 2.5px;
+}
+
+audio {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    border-bottom: 1px solid #5e5e5e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
