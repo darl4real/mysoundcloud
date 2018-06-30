@@ -1,0 +1,21 @@
+{
+  "name": "mysoundcloud",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "darl4real <darl4real@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/darl4real/Express_Server",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
+  }
+}
